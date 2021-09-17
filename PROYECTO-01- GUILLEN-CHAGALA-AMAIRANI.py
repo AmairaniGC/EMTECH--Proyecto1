@@ -40,7 +40,7 @@ while opcion_valida != 1:
     print('Seleccionó reporte de productos más vendidos y productos rezgados.\nHaga una selección del reporte que desea consultar: \n1.- 50 productos con mayores ventas.\n2.- 50 productos con mayores búsquedas.\n3.- 10 productos con menores ventas por categoria. \n4.- 10 productos con menores búsquedas por categoría. \n5.- Regresar al menú anterior')
     opcion_valida = 1
 
-    subopcion1_seleccionada = input('Teclee su selección: ')
+    subopcion1_seleccionada = input('Seleccione una opcion: ')
     subopcion1_valida = 0
 
     while subopcion1_valida != 1:
@@ -219,13 +219,13 @@ while opcion_valida != 1:
         opcion_valida = 0
         break
       else:
-        print('Su selección no es parte de las opciones. \nIntente una selección válida')
-        subopcion1_seleccionada = input('Teclee su selección: ')
+        print('Su selección no es parte de las opciones. \nIngrese una selección válida')
+        subopcion1_seleccionada = input('Seleccione una opcion: ')
 
   elif opcion_seleccionada == '2':
-    print('Seleccionó los informes de productos por reseña en el servicio. \nHaga una selección del reporte que desea consultar: \n1.- 20 productos con mejores reseñas.\n2.- 20 productos con peores reseñas.\n3.- Regresar al menú anterior.\n')
+    print('Seleccionó los informes de productos por reseña en el servicio. \n Seleccione la opcion del reporte que desea consultar: \n1.- 20 productos con mejores reseñas.\n2.- 20 productos con peores reseñas.\n3.- Regresar al menú anterior.\n')
     opcion_valida = 1
-    subopcion2_seleccionada = input('Teclee su selección: ')
+    subopcion2_seleccionada = input('Seleccione una opcion: ')
     subopcion2_valida = 0
     while subopcion2_valida != 1:
       #lista 20 productos con mejores reseñas 
@@ -313,12 +313,12 @@ while opcion_valida != 1:
         opcion_valida = 0
         break
       else:
-        print('Su selección no es parte de las opciones. \nIntente una selección válida')
-        subopcion2_seleccionada = input('Teclee su selección: ')
+        print('Su selección no es parte de las opciones. \n Seleccione una opcion válida')
+        subopcion2_seleccionada = input('Seleccione una opcion: ')
   elif opcion_seleccionada == '3':
     print('Seleccionó los informes de productos más vendidos y productos rezgados. \nHaga una selección del reporte que desea consultar: \n1.- Total de ingresos mensuales.\n2.- Ventas promedio mensuales.\n3.- Total de ventas anuales. \n4.- Meses con más ventas al año.\n5.- Regresar al menú anterior.')
     opcion_valida = 1
-    subopcion3_seleccionada = input('Teclee su selección: ')
+    subopcion3_seleccionada = input('Seleccione una opcion: ')
     subopcion3_valida = 0
     while subopcion3_valida != 1:
       #lista Total ingresos mensuales
@@ -366,7 +366,7 @@ while opcion_valida != 1:
               ingreso_mensual += venta_total
               ingresos_totales += ingreso_mensual
               ventas_totales += ventas
-        print(f'\nLa venta total en fue de {ventas_totales} unidades, resultando en un promedio mensual de {ventas_totales/12} unidades')
+        print(f'\nLa venta total fue de {ventas_totales} unidades, resultando de un promedio mensual de {ventas_totales/12} unidades')
         opcion_valida = 0
         break
         subopcion3_valida = 1
@@ -439,8 +439,8 @@ while opcion_valida != 1:
         opcion_valida = 0
         break
       else:
-        print('Su selección no es parte de las opciones. \nIntente una selección válida')
-        subopcion_seleccionada = input('Teclee su selección: ')
+        print('Su selección no es parte de las opciones. \nSeleccione una opcion válida')
+        subopcion_seleccionada = input('Seleccione una opcion: ')
   elif opcion_seleccionada == '4':
     print('Ha cerrado sesión exitosamente. \n¡Hasta luego!')
     opcion_valida = 0
@@ -449,7 +449,7 @@ while opcion_valida != 1:
     print('Su selección no es parte de las opciones. \nIntente una selección válida')
     opcion_valida = 0
     opcion_seleccionada = input('Teclee su selección: ')
-#While o se cumpla el input correcto, que siga preguntando
-#hacer variable bander e iterar mientras no se cumpla
-#Depende de tu opción es el mensaje que te muestro de cofirmación de seleción
-#Sino, mostrar la opción incorrecta y volver a pedirla
+# While o se cumpla el input correcto, que siga preguntando
+# Hacer variable bander e iterar mientras no se cumpla
+# Dependiendo de la opción seleccionada es el mensaje que se muestra
+# Opción incorrecta y volver a solicitar una ocion valida
